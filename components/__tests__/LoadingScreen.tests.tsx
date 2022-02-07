@@ -4,7 +4,7 @@ import LoadingScreen from '../LoadingScreen'
 
 describe('tests for LoadingScreen component', () => {
   it('given Loading screen without props, null should be returned', () => {
-    const tree = render(<LoadingScreen />).toJSON()
+    const tree = render(<LoadingScreen loading={false} />).toJSON()
     expect(tree).toBeNull()
   })
 
